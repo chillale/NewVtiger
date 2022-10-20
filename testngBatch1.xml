@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="genericUtility.ListenersImplementation"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="sravan" value="chrome"></parameter>
+    <classes>
+      <class name="com.crm.vtigertestcases.Utility2.copy.CreateOrganisationOnly"/>
+      <class name="com.crm.vtigertestcases.Utility2.copy.CreateContactWithOrgnameTest"/>
+      <class name="com.crm.vtigertestcases.Utility2.copy.CreateLeadTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

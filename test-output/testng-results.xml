@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-19T11:44:08 IST" name="Suite" finished-at="2022-10-19T11:44:50 IST" duration-ms="41957">
+    <groups>
+    </groups>
+    <test started-at="2022-10-19T11:44:08 IST" name="Test" finished-at="2022-10-19T11:44:50 IST" duration-ms="41957">
+      <class name="com.crm.vtiger.testcases.CreateContactWithOrgNameTest">
+        <test-method is-config="true" signature="connectDataBase()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:08 IST" name="connectDataBase" finished-at="2022-10-19T11:44:08 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDataBase -->
+        <test-method is-config="true" signature="launchTheBrowser(java.lang.String)[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:09 IST" name="launchTheBrowser" finished-at="2022-10-19T11:44:12 IST" duration-ms="3909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginIntoPage()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:12 IST" name="loginIntoPage" finished-at="2022-10-19T11:44:17 IST" duration-ms="4541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoPage -->
+        <test-method signature="createConWithOrgNametest()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:17 IST" name="createConWithOrgNametest" finished-at="2022-10-19T11:44:32 IST" duration-ms="14698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConWithOrgNametest -->
+        <test-method is-config="true" signature="logoutFromPage()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:32 IST" name="logoutFromPage" finished-at="2022-10-19T11:44:34 IST" duration-ms="1997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromPage -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:34 IST" name="closeTheBrowser" finished-at="2022-10-19T11:44:34 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="disconnectDataBase()[pri:0, instance:com.crm.vtiger.testcases.CreateContactWithOrgNameTest@4a883b15]" started-at="2022-10-19T11:44:51 IST" name="disconnectDataBase" finished-at="2022-10-19T11:44:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDataBase -->
+      </class> <!-- com.crm.vtiger.testcases.CreateContactWithOrgNameTest -->
+      <class name="com.crm.vtiger.testcases.CreateOrganisationTest">
+        <test-method is-config="true" signature="launchTheBrowser(java.lang.String)[pri:0, instance:com.crm.vtiger.testcases.CreateOrganisationTest@4d154ccd]" started-at="2022-10-19T11:44:34 IST" name="launchTheBrowser" finished-at="2022-10-19T11:44:36 IST" duration-ms="2414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginIntoPage()[pri:0, instance:com.crm.vtiger.testcases.CreateOrganisationTest@4d154ccd]" started-at="2022-10-19T11:44:36 IST" name="loginIntoPage" finished-at="2022-10-19T11:44:40 IST" duration-ms="4061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoPage -->
+        <test-method signature="createOrganisationTest()[pri:0, instance:com.crm.vtiger.testcases.CreateOrganisationTest@4d154ccd]" started-at="2022-10-19T11:44:40 IST" name="createOrganisationTest" finished-at="2022-10-19T11:44:48 IST" duration-ms="7907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromPage()[pri:0, instance:com.crm.vtiger.testcases.CreateOrganisationTest@4d154ccd]" started-at="2022-10-19T11:44:48 IST" name="logoutFromPage" finished-at="2022-10-19T11:44:50 IST" duration-ms="2096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromPage -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.vtiger.testcases.CreateOrganisationTest@4d154ccd]" started-at="2022-10-19T11:44:50 IST" name="closeTheBrowser" finished-at="2022-10-19T11:44:50 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- com.crm.vtiger.testcases.CreateOrganisationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
