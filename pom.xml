@@ -11,7 +11,7 @@
 				<version>3.0.0-M7</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testngamazon.xml</suiteXmlFile>
+						<suiteXmlFile>testngCrossBrowsing.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -86,7 +86,7 @@
 						<version>3.0.0-M7</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngamazon.xml</suiteXmlFile>
+								<suiteXmlFile>testngGroups.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -103,7 +103,7 @@
 						<version>3.0.0-M7</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngparallel.xml</suiteXmlFile>
+								<suiteXmlFile>testngParallel.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -120,7 +120,7 @@
 						<version>3.0.0-M7</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngBatch2.xml</suiteXmlFile>
+								<suiteXmlFile>testngBatch.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
