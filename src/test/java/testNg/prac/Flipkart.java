@@ -20,12 +20,5 @@ public class Flipkart  {
 		Assert.assertEquals(true, true);
 	}
 
-	@Test
-	public void flipkart() {
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-		driver.get("https://flipkart.com");
-		System.out.println(driver.getTitle());
-		Assert.assertEquals(true, true);
-	}
+
 }
