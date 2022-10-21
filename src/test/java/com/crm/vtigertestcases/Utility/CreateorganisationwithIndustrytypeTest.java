@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import genericUtility.ExcelFileUtility;
 import genericUtility.JavaUtillity;
@@ -14,7 +15,8 @@ import genericUtility.PropertyFileUtility;
 import genericUtility.WebDriverUtility;
 
 public class CreateorganisationwithIndustrytypeTest {
-	public static void main(String[] args) throws Throwable {
+	@Test
+	public void createOrganisationwithIndustrytypeTest() throws Throwable {
 		WebDriver driver=new ChromeDriver();
 		WebDriverUtility wdu=new WebDriverUtility(driver);
 		wdu.maximize();

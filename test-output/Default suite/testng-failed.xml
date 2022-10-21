@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.testcases.CreateOrganisationTest">
+      <class name="com.crm.vtigertestcases.Utility.CreateorganisationwithIndustrytypeTest">
         <methods>
-          <include name="connectDataBase"/>
-          <include name="launchTheBrowser"/>
-          <include name="disconnectDataBase"/>
-          <include name="createOrganisationTest"/>
-          <include name="closeTheBrowser"/>
-          <include name="logoutFromPage"/>
-          <include name="loginIntoPage"/>
+          <include name="createOrganisationwithIndustrytypeTest"/>
         </methods>
-      </class> <!-- com.crm.vtiger.testcases.CreateOrganisationTest -->
+      </class> <!-- com.crm.vtigertestcases.Utility.CreateorganisationwithIndustrytypeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

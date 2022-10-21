@@ -5,13 +5,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import genericUtility.ExcelFileUtility;
 import genericUtility.PropertyFileUtility;
 import genericUtility.WebDriverUtility;
 
 public class CreateorganisationTest {
-	public static void main(String[] args) throws Throwable {
+	@Test
+	public void createOrganisationTest() throws Throwable{
 		WebDriver driver=new ChromeDriver();
 //		WebDriverUtility wdu=new WebDriverUtility(driver);
 		WebDriverUtility wdu=new WebDriverUtility(driver);
@@ -61,6 +63,7 @@ public class CreateorganisationTest {
 		
 		WebElement signOut = driver.findElement(By.xpath("//a[text()='Sign Out']"));
 		signOut.click();
+		Thread.sleep(3000);
 		driver.close();
 
 		

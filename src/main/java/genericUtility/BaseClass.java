@@ -32,21 +32,16 @@ public class BaseClass {
 	{
 		System.out.println("===DataBase Disconnected===");
 	}
-	@org.testng.annotations.Parameters("sravan")
+	//@org.testng.annotations.Parameters("sravan")
 	@BeforeClass(groups = {"smoke","integration","regression"})
-	public void launchTheBrowser(String Browser) throws Throwable
+	public void launchTheBrowser() throws Throwable
 	{
 		//String Browser=propertyFileUtility.readDatafromPropertyFile("Browser");
-		if(Browser.equals("chrome"))
-		{
+	
 		WebDriverManager.chromedriver().setup();
 		 driver=new ChromeDriver();  
-		}
-		else
-		{
-			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
-		}
+		
+	
 		sdriver=driver;
 		 WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 		webDriverUtility.maximize();

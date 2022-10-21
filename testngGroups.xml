@@ -5,11 +5,10 @@
 <listener class-name="genericUtility.ListenersImplementation"></listener>
 </listeners>
   <test thread-count="5" name="Test">
-  <parameter name="sravan" value="chrome"></parameter>
     <classes>
-      <class name="com.crm.vtigertestcases.Utility2.copy.CreateOrganisationOnly"/>
-      <class name="com.crm.vtigertestcases.Utility2.copy.CreateContactWithOrgnameTest"/>
-      <class name="com.crm.vtigertestcases.Utility2.copy.CreateLeadTest"/>
+      <class name="com.crm.vtiger.testcases.CreateContactWithOrgNameTest"/>
+      <class name="com.crm.vtiger.testcases.CreateOrganisationTest"/>
+      <class name="com.crm.vtiger.testcases.CreateOrganisationwithIndustrytypeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

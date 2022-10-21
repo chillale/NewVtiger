@@ -38,6 +38,8 @@ public class OppurtunitiesTestCase {
          driver.switchTo().window(parentWindow);
          hpc.actionOnAdmin(driver);
          hpc.getSignot().click();
+         Thread.sleep(3000);
+         driver.close();
          
         
 

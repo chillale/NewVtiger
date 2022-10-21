@@ -17,7 +17,7 @@ public class Flipkart {
 		driver = new ChromeDriver();
 		driver.get("https://amazon.in");
 		System.out.println(driver.getTitle());
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 	}
 
 	@Test
@@ -26,6 +26,6 @@ public class Flipkart {
 		driver=new ChromeDriver();
 		driver.get("https://flipkart.com");
 		System.out.println(driver.getTitle());
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 	}
 }

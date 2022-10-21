@@ -13,13 +13,13 @@ import objectRepository.OrganisationDetailsPageClass;
 import objectRepository.OrganisationPageClass;
 
 public class CreateOrganisationOnly extends BaseClass {
-	@Test(groups = "regression")
+	@Test
 	public void createOrganisationOnly() throws Throwable {
 		
 		 String orgname1="amsa1"+JavaUtillity.generateRanNum(); 
 		 HomePageClass hpc=new HomePageClass(driver);
 		 hpc.orgB();
-		 Thread.sleep(3000);
+		 
 		 
 		 OrganisationPageClass opc=new OrganisationPageClass(driver);
 		 opc.newOrgBtn();

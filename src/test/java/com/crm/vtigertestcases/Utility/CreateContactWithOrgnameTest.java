@@ -11,7 +11,7 @@ import genericUtility.ExcelFileUtility;
 
 import genericUtility.WebDriverUtility;
 public class CreateContactWithOrgnameTest extends BaseClass{
-	@Test(groups = "smoke")
+	@Test
 	public void createConWithOrgnameTest() throws Throwable {
 		WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 		ExcelFileUtility efu=new ExcelFileUtility();

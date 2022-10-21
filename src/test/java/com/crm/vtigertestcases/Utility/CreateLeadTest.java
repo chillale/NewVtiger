@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import genericUtility.ExcelFileUtility;
 import genericUtility.PropertyFileUtility;
@@ -13,7 +14,8 @@ import genericUtility.WebDriverUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CreateLeadTest {
-	public static void main(String[] args) throws Throwable {
+	@Test
+	public void createLeadTest() throws Throwable{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		WebDriverUtility wdu=new WebDriverUtility(driver);

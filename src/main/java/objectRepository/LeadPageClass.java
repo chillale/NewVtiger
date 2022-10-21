@@ -107,6 +107,9 @@ public class LeadPageClass {
 	public WebElement getSaveButton() {
 		return saveButton;
 	}
+	public void nameType(String value) {
+		wdu.selectByvalue(nameType, value);
+	}
 	
 	public void leadPageDetails() {
 		nameType.sendKeys("Mr");

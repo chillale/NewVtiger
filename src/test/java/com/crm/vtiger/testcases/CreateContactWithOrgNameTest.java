@@ -10,8 +10,8 @@ import objectRepository.HomePageClass;
 
 public class CreateContactWithOrgNameTest extends BaseClass {
 
-	@Test
-	public void createConWithOrgNametest() {
+	@Test(groups = "smoke")
+	public void createConWithOrgNametest() throws Throwable {
 		WebDriverUtility webDriverUtility = new WebDriverUtility(driver);
 		HomePageClass homePageClass = new HomePageClass(driver);
 		homePageClass.conB();
@@ -31,6 +31,7 @@ public class CreateContactWithOrgNameTest extends BaseClass {
 		contactDetailsPageClass.getCompanyNameClick().click();
 		driver.switchTo().window(parentwin);
 		contactDetailsPageClass.getsButton().click();
+		Thread.sleep(3000);
 
 	}
 
