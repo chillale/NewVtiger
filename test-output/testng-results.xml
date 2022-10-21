@@ -2,22 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-21T09:58:53 IST" name="Suite" finished-at="2022-10-21T10:01:05 IST" duration-ms="132492">
+  <suite started-at="2022-10-21T14:40:09 IST" name="Suite" finished-at="2022-10-21T14:42:01 IST" duration-ms="111620">
     <groups>
     </groups>
-    <test started-at="2022-10-21T09:58:53 IST" name="chrome" finished-at="2022-10-21T10:00:56 IST" duration-ms="122624">
+    <test started-at="2022-10-21T14:40:09 IST" name="chrome" finished-at="2022-10-21T14:41:52 IST" duration-ms="102705">
       <class name="testNg.prac.Flipkart">
-        <test-method signature="amazon()[pri:0, instance:testNg.prac.Flipkart@2ed2d9cb]" started-at="2022-10-21T09:58:53 IST" name="amazon" finished-at="2022-10-21T09:59:20 IST" duration-ms="27029" status="PASS">
+        <test-method signature="amazon()[pri:0, instance:testNg.prac.Flipkart@6392827e]" started-at="2022-10-21T14:40:09 IST" name="amazon" finished-at="2022-10-21T14:41:52 IST" duration-ms="102628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazon -->
-        <test-method signature="flipkart()[pri:0, instance:testNg.prac.Flipkart@2ed2d9cb]" started-at="2022-10-21T09:59:20 IST" name="flipkart" finished-at="2022-10-21T10:00:56 IST" duration-ms="95537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flipkart -->
       </class> <!-- testNg.prac.Flipkart -->
     </test> <!-- chrome -->
-    <test started-at="2022-10-21T10:00:56 IST" name="edge" finished-at="2022-10-21T10:01:05 IST" duration-ms="9832">
+    <test started-at="2022-10-21T14:41:52 IST" name="edge" finished-at="2022-10-21T14:42:01 IST" duration-ms="8883">
+      <class name="testNg.prac.Flipkart">
+        <test-method signature="amazon()[pri:0, instance:testNg.prac.Flipkart@e350b40]" started-at="2022-10-21T14:41:52 IST" name="amazon" finished-at="2022-10-21T14:42:01 IST" duration-ms="8878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+      </class> <!-- testNg.prac.Flipkart -->
     </test> <!-- edge -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.HomePageClass;
 import objectRepository.LoginPageClass;
 
-public class BaseClass {
+public class BaseClass extends Object{
 	public WebDriver driver;
 	public static WebDriver sdriver;
 	PropertyFileUtility propertyFileUtility = new PropertyFileUtility();

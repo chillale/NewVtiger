@@ -9,7 +9,7 @@
   </test> <!-- Test -->
   
   
-   <test name = "firefox" parallel = "classes" thread-count="2" >
+   <test name = "edge" parallel = "classes" thread-count="2" >
   <parameter name="Browser" value="firefox"></parameter>
     <classes>
       <class name="testNg.prac.Flipkart"/>
