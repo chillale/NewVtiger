@@ -1,4 +1,4 @@
-package genericUtility;
+ package genericUtility;
 
 import java.io.FileInputStream;
 //import java.io.IOException;
@@ -14,19 +14,19 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelFileUtility {
 	public String readDatafromExcelFile(String sheetNUm, int rowNum, int cellNum) throws Throwable
 	{
-		FileInputStream fis=new FileInputStream("./CommonData/CommonD.xlsx");
-		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sn=wb.getSheet(sheetNUm);
-	    Row rn = sn.getRow(rowNum);
-	    Cell cn = rn.getCell(cellNum);
-	    String value = cn.getStringCellValue();
+		FileInputStream fileInputStream=new FileInputStream("./CommonData/CommonD.xlsx");
+		Workbook workbook=WorkbookFactory.create(fileInputStream);
+		Sheet sheet=workbook.getSheet(sheetNUm);
+	    Row row = sheet.getRow(rowNum);
+	    Cell cell = row.getCell(cellNum);
+	    String value = cell.getStringCellValue();
 	    return value;
 	}
 	public int getLastRowCount(String sheetNUm) throws Throwable
 	{
-		FileInputStream fis=new FileInputStream("./CommonData/CommonD.xlsx");
-		Workbook wb=WorkbookFactory.create(fis);
-		return wb.getSheet(sheetNUm).getLastRowNum();
+		FileInputStream fileInputStream=new FileInputStream("./CommonData/CommonD.xlsx");
+		Workbook workbook=WorkbookFactory.create(fileInputStream);
+		return workbook.getSheet(sheetNUm).getLastRowNum();
 	    
 	}
 

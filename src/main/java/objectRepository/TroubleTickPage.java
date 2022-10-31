@@ -46,6 +46,7 @@ public class TroubleTickPage {
 	
 	
 	public TroubleTickPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

@@ -28,6 +28,7 @@ public class WebDriverUtility {
 	public void implicitlywait() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
+	
 	/**This method is used to use Select Class
 	 * @author Saikrishna
 	 * @param ele 

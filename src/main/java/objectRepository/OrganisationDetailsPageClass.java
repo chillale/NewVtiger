@@ -60,6 +60,7 @@ public class OrganisationDetailsPageClass {
 		return sButton;
 	}
 	public OrganisationDetailsPageClass(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	public void orgPageDetails(String value, String value1) {

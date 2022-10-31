@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class OppurtunitiesPageClass {
+	WebDriver driver;
+	
 	@FindBy(xpath = "//img[@src='themes/softed/images/btnL3Add.gif']")
 	private WebElement oppurPlusBtn;
 	
@@ -47,6 +49,7 @@ public class OppurtunitiesPageClass {
 	private WebElement saveBtn;
 	
 	public OppurtunitiesPageClass(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

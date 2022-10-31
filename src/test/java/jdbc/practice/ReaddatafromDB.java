@@ -31,7 +31,7 @@ Driver dri=	new Driver();
 			ResultSet resultset=stmt.executeQuery("select * from students;");
 			while(resultset.next())
 			{
-				System.out.println(resultset.getString(1)+" "+resultset.getString(2));
+				System.out.println(resultset.getString(2)+" "+resultset.getString(3));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

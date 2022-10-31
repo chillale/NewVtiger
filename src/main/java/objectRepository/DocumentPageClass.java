@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DocumentPageClass {
+	WebDriver driver;
 	@FindBy(xpath = "//img[@src='themes/softed/images/btnL3Add.gif']")
 	private WebElement documentPlusBtn;
 	
@@ -16,6 +17,7 @@ public class DocumentPageClass {
 	private WebElement sButton;
 	
 	public DocumentPageClass(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		
 	}

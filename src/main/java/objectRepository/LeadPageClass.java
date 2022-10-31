@@ -49,6 +49,7 @@ public class LeadPageClass {
 	private WebElement saveButton;
 	
 	public LeadPageClass(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

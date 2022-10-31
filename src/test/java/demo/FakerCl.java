@@ -28,8 +28,6 @@ public class FakerCl {
 		String addressCity = faker.address().city();
 		System.out.println(addressCity);
 		
-		Date birthdayDate = faker.date().birthday();
-		System.out.println(birthdayDate);
 		
 		String artistName = faker.artist().name();
 		System.out.println(artistName);

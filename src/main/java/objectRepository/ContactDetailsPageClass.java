@@ -14,7 +14,7 @@ public class ContactDetailsPageClass {
 	
 	
 	WebDriver driver;
-	WebDriverUtility wdu=new WebDriverUtility(driver);
+	WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 	@FindBy(name = "salutationtype")
 	private WebElement nameType;
 	
@@ -166,7 +166,7 @@ public class ContactDetailsPageClass {
 	}
 
 	public void firstNameType(String value) {
-		wdu.selectByvalue(nameType, value);
+		webDriverUtility.selectByvalue(nameType, value);
 //		Select select=new Select(nameType);
 //		select.selectByValue(value);
 	}
@@ -193,12 +193,12 @@ public class ContactDetailsPageClass {
 		return leadSrcDd;
 	}
 	public void leadSrcType(String value) {
-		wdu.selectByvalue(leadSrcDd, value);
+		webDriverUtility.selectByvalue(leadSrcDd, value);
 	}
 
 	public void signout(WebDriver driver) {
-		Actions act=new Actions(driver);
-		act.moveToElement(adminImg).perform();
+		Actions actions=new Actions(driver);
+		actions.moveToElement(adminImg).perform();
 		signot.click();
 		
 	}
