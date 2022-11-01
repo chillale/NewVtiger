@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-27T12:47:51 IST" name="Default suite" finished-at="2022-10-27T12:47:52 IST" duration-ms="420">
+  <suite started-at="2022-11-01T13:19:06 IST" name="Default suite" finished-at="2022-11-01T13:19:22 IST" duration-ms="16371">
     <groups>
     </groups>
-    <test started-at="2022-10-27T12:47:51 IST" name="Default test" finished-at="2022-10-27T12:47:52 IST" duration-ms="420">
-      <class name="jdbc.practice.ReaddatafromDB">
-        <test-method signature="readDataTest()[pri:0, instance:jdbc.practice.ReaddatafromDB@6fd83fc1]" started-at="2022-10-27T12:47:51 IST" name="readDataTest" finished-at="2022-10-27T12:47:51 IST" duration-ms="379" status="PASS">
+    <test started-at="2022-11-01T13:19:06 IST" name="Default test" finished-at="2022-11-01T13:19:22 IST" duration-ms="16371">
+      <class name="com.extentReports.ExtentReports">
+        <test-method signature="createReport()[pri:0, instance:com.extentReports.ExtentReports@54bff557]" started-at="2022-11-01T13:19:06 IST" name="createReport" finished-at="2022-11-01T13:19:22 IST" duration-ms="16318" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readDataTest -->
-      </class> <!-- jdbc.practice.ReaddatafromDB -->
+        </test-method> <!-- createReport -->
+      </class> <!-- com.extentReports.ExtentReports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
