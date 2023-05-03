@@ -24,11 +24,11 @@ public class TableTestCase2 {
 		List<WebElement> row = driver.findElements(By.xpath("//table[@class='table']/tbody/tr"));
 		for(int i=1;i<=row.size();i++) {
 			for(int j=1;j<=5;j++) {
-				if(j==2) {
+				
 				String text = driver.findElement(By.xpath("//table[@class='table']/tbody/tr["+i+"]/td["+j+"]")).getText();
 				System.out.print(text);
 				}
-				}
+				
 			System.out.println();
 		}
 	}

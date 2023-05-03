@@ -3,11 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtigertestcases.Utility.CreateorganisationwithIndustrytypeTest">
+      <class name="testNg.prac.Groups">
         <methods>
-          <include name="createOrganisationwithIndustrytypeTest"/>
+          <include name="d"/>
+          <include name="e"/>
+          <include name="f"/>
+          <include name="a"/>
         </methods>
-      </class> <!-- com.crm.vtigertestcases.Utility.CreateorganisationwithIndustrytypeTest -->
+      </class> <!-- testNg.prac.Groups -->
+      <class name="com.crm.vtiger.testcases.CreateContactWithOrgNameTest">
+        <methods>
+          <include name="connectDataBase"/>
+          <include name="launchTheBrowser"/>
+          <include name="disconnectDataBase"/>
+          <include name="closeTheBrowser"/>
+          <include name="logoutFromPage"/>
+          <include name="createConWithOrgNametest"/>
+          <include name="loginIntoPage"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.testcases.CreateContactWithOrgNameTest -->
+      <class name="com.crm.vtigertestcases.Utility2.copy.Sample">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.crm.vtigertestcases.Utility2.copy.Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

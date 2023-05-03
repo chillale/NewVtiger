@@ -1,9 +1,13 @@
 package genericUtility;
 
 
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -11,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.HomePageClass;
@@ -40,8 +45,6 @@ public class BaseClass extends Object{
 	
 		WebDriverManager.chromedriver().setup();
 		 driver=new ChromeDriver();  
-		
-	
 		sdriver=driver;
 		 WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 		webDriverUtility.maximize();
@@ -69,5 +72,24 @@ public class BaseClass extends Object{
 		homePageClass.actionOnAdmin(driver);
 		homePageClass.getSignot().click();
 	}
+	public static String takescreenshot(String name) throws IOException 
+	{
+		TakesScreenshot ts = (TakesScreenshot)BaseClass.sdriver;
+		File src=ts.getScreenshotAs(OutputType.FILE);
+
+		String  path= "./Screenshot/"+name+".PNG";
+		
+		File dest1 = new File(path);
+		try {
+			Files.copy(src, dest1);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return path;
+		
+		
+
+			}
 
 }

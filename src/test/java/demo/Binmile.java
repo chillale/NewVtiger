@@ -13,6 +13,7 @@ public class Binmile {
 		System.out.println(uN);
 		System.out.println(pWd);
 		
+		
 	}
 
 }

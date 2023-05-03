@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import genericUtility.JavaUtillity;
 import genericUtility.WebDriverUtility;
@@ -22,9 +24,10 @@ public class MakeMyTripDateChanging {
 		wdu.implicitlywait();
 		
 		driver.get("http://www.makemytrip.com/");
+		//WebDriverWait wait = new WebDriverWait(driver, 1, 10);
 		
-		WebElement closeButton = driver.findElement(By.className("langCardClose"));
-		closeButton.click();
+//		WebElement closeButton = driver.findElement(By.className("langCardClose"));
+//		closeButton.click();
 		
 		WebElement departureButton = driver.findElement(By.xpath("//label[@for='departure']"));
 		departureButton.click();

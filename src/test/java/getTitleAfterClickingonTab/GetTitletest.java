@@ -58,12 +58,11 @@ public class GetTitletest {
 	    for(String aw:allhandles) {
 	    
 	    		String title = driver.switchTo().window(aw).getTitle();
-	    		//System.out.println(title);
-	    		if(title.equals("Customer")) {
-	    			System.out.println(driver.getCurrentUrl());
-	    			break;	    			
-	    			
+	    		System.out.println(title);
+	    		if(!title.equals("Customer Service")) {
+	    			   driver.quit(); 
 	    		}
+	    		//driver.switchTo().window(parentWindow);
 	    	
 	    	
 	    }

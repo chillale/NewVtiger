@@ -81,7 +81,7 @@ public class WebDriverUtility {
 		Set<String> allWinHandles = driver.getWindowHandles();
 		System.out.println("All Window handles are");
 		for(String aw:allWinHandles) {
-			System.out.println(aw);
+			System.out.println(aw);  
 			if(!pHandle.equals(aw)) {
 				driver.switchTo().window(aw);
 				break;

@@ -1,69 +1,74 @@
 package genericUtility;
 
-import java.io.File;
+
 import java.io.IOException;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.google.common.io.Files;
-
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ListenersImplementation implements ITestListener {
-	
-	
-		public void onTestStart(ITestResult result) {
-			System.out.println("This will start when @test will start");
+	ExtentTest test;
 
+	ExtentReports reports;
+
+	public void onTestStart(ITestResult result) {
+		test = reports.createTest(result.getMethod().getMethodName());
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		test.log(Status.PASS, result.getMethod().getMethodName() + "got passed");
+	}
+
+	public void onTestFailure(ITestResult result) {
+		String path = null;
+		try {
+			path = BaseClass.takescreenshot(result.getMethod().getMethodName());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		test.log(Status.FAIL, result.getMethod().getMethodName() + "got failed");
+		test.log(Status.FAIL, result.getThrowable());
+		test.addScreenCaptureFromPath(path);
+	}
 
-		public void onTestSuccess(ITestResult result) {
-
-		}
-
-		public void onTestFailure(ITestResult result) {
-
-			TakesScreenshot ts = (TakesScreenshot)BaseClass.sdriver;
-			File src=ts.getScreenshotAs(OutputType.FILE);
-			File dest = new File("./Screenshot/"+result.getMethod().getMethodName()+".PNG");
-			try {
-				Files.copy(src, dest);
-			} catch (IOException e) {
-			
-				e.printStackTrace();
-			}
-
-		}
-
-		public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-
-
-
-		}
-
-		public void onTestFailedWithTimeout(ITestResult result) {
-
-		}
-
-		public void onStart(ITestContext context) {
-
-		}
-
-		public void onFinish(ITestContext context) {
-
-		}
-
-		@Override
-		public void onTestSkipped(ITestResult result) {
-			// TODO Auto-generated method stub
-			
-		}
-
-
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 
 	}
 
+	public void onTestFailedWithTimeout(ITestResult result) {
 
+	}
+
+	public void onStart(ITestContext context) {
+		ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("./ExtentReports/VtigerApp.html");
+		extentSparkReporter.config().setDocumentTitle("V-tiger");
+		extentSparkReporter.config().setTheme(Theme.DARK);
+
+		reports = new ExtentReports();
+		reports.attachReporter(extentSparkReporter);
+
+		reports.setSystemInfo("Browser", "Chrome");
+		reports.setSystemInfo("Build", "10.3.6");
+		reports.setSystemInfo("Reporter Name", "Rajesh");
+		reports.setSystemInfo("Env", "Developer");
+	}
+
+	public void onFinish(ITestContext context) {
+		reports.flush();
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		test.log(Status.SKIP, result.getMethod().getMethodName()+"got skipped");
+
+	}
+
+}
