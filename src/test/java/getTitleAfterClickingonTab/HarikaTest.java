@@ -14,10 +14,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class HarikaTest {
 	public static void main(String[] args) {
 		//WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chill\\git\\vtiger\\Sdet\\drive\\chromedriver.exe");
-		 ChromeOptions co = new ChromeOptions();
-		 co.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(co);
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chill\\git\\vtiger\\Sdet\\drive\\chrome_proxy.exe");
+//		 ChromeOptions co = new ChromeOptions();
+//		 co.addArguments("--remote-allow-origins=*");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://platform.votigo.com/fbsweeps/sweeps/Testsweepforautomation");
